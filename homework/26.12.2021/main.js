@@ -6,8 +6,20 @@ function sumArray(array) {
     for (let i = 0; i < array.length; i++) {
         sum += array[i];
     }
-    return sum
+    return sum;
 }
 console.log(sumArray(numbersArray));
 
 //!2
+const numArray = [1, 2, 3, 4, 5];
+function multiple(array) {
+    let multiSum = 1
+    for (let i = 0; i < array.length; i++) {
+        multiSum *= array[i]
+    }
+    return multiSum;
+}
+console.log(multiple(numArray));
+
+//!3
+
