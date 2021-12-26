@@ -72,3 +72,16 @@ function agesAverage(array) {
 }
 
 console.log(agesAverage(agesArray));
+
+//!5
+// const userInput1 = Number(prompt("enter number"));
+// const array = []
+// let i = 0;
+
+// while (i < 3) {
+//     if (userInput1 !== 0 && userInput1 !== null) {
+//         array.push()
+//     }
+//     i++;
+// }
+
