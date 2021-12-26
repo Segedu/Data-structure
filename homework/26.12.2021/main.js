@@ -52,7 +52,7 @@ function maxAge(array) {
 
 console.log(maxAge(agesArray));
 
-
+//!4-c
 function agesSum(array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
@@ -62,3 +62,13 @@ function agesSum(array) {
 }
 
 console.log(agesSum(agesArray));
+
+//!4-d
+function agesAverage(array) {
+    let average = 1;
+    let sum = agesSum(array)
+    average = sum / array.length
+    return average;
+}
+
+console.log(agesAverage(agesArray));
