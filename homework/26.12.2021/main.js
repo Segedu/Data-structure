@@ -23,3 +23,42 @@ console.log(multiple(numArray));
 
 //!3
 
+//!4-a
+const agesArray = [8, 4, 22, 60, 2, 3];
+
+function minAge(array) {
+    let min = array[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < min) {
+            min = array[i]
+        }
+    }
+    return min
+}
+
+console.log(minAge(agesArray));
+
+//!4-b
+
+function maxAge(array) {
+    let max = array[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i]
+        }
+    }
+    return max
+}
+
+console.log(maxAge(agesArray));
+
+
+function agesSum(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i]
+    }
+    return sum;
+}
+
+console.log(agesSum(agesArray));
