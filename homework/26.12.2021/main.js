@@ -23,19 +23,16 @@
 
 //!3
 
-function sumIntegerValues(number) {
-    let sum = 0;
-    // for (let i = 0; i < number.length; i++) {
-    sum = number % 10;
-    number = (number - sum) / 10;
-    let num2 = number;
-    let sum2 = (num2 % 10)
-    let num3 = (num2 - sum) / 10
-    console.log({ num3 });
-    console.log({ sum, sum2 });
+// function sumIntegerValues(number) {
+//     let sum = 0
+//     let num2 = number;
+//     let sum2 = (num2 % 10)
+//     let num3 = (num2 - sum2) / 10
+//     console.log({ num3 });
+//     console.log({ sum, sum2 });
+// }
+// console.log(sumIntegerValues(572))
 
-}
-console.log(sumIntegerValues(572))
 //!4-a
 // const agesArray = [8, 4, 22, 60, 2, 3];
 
