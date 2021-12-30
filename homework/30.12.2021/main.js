@@ -6,10 +6,9 @@
 //         let updatedNum = parseInt(divideByTen)
 //         return sumNumValues(updatedNum, total)
 //     }
-//     return (total)
-
+//     return total
 // }
-// console.log(sumNumValues(333, 0))
+// console.log(sumNumValues(333, 0));
 
 //!2 works only if the array is sorted
 // function findMinInArray(array, min) {
@@ -23,17 +22,31 @@
 // const array = [7, 4, 3, 2, -2, -20];
 // console.log(findMinInArray(array, array[0]));
 
+//!2-second option
+// function findMinInArray(array, min, count) {
+//     if (array[0 + count] < min) {
+//         min = array[0 + count]
+//         count++;
+//         array.shift()
+//         console.log(array[0 + count]);
+//         return (findMinInArray(array, min, count))
+//     }
+//     return min
+// }
+// const array = [7, 4, 3, 2, -2, -20];
+// console.log(findMinInArray(array, array[0], 0));
+
 //!3
-function insertToArray(count, array) {
-    if (count < 3) {
-        const userInput = Number(prompt("enter number"));
-        if (userInput !== 0 && userInput !== " " && userInput == userInput) {
-            array.push(userInput);
-            count++;
-        }
-        return insertToArray(count, array);
-    }
-    return array
-}
-const array = [];
-console.log(insertToArray(0, array))
+// function insertToArray(count, array) {
+//     if (count < 3) {
+//         const userInput = Number(prompt("enter number"));
+//         if (userInput !== 0 && userInput !== " " && userInput === userInput) {
+//             array.push(userInput);
+//             count++;
+//         }
+//         return insertToArray(count, array);
+//     }
+//     return array
+// }
+// const array = [];
+// console.log(insertToArray(0, array));
