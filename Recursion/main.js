@@ -17,7 +17,17 @@ function sum(total, array) {
         total += array.shift()
         return sum(total, array)
     }
-    return total
+    return total;
+
 }
 
 // console.log(sum(num, array))
+
+function average(totalSum, array, length) {
+    if (array.length) {
+        totalSum += array.pop()
+        return (average(totalSum, array, length))
+    }
+    return totalSum / length
+}
+console.log(average(0, array, array.length))
