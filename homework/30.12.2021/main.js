@@ -50,3 +50,19 @@
 // }
 // const array = [];
 // console.log(insertToArray(0, array));
+
+//!4
+
+
+// function MergeSort(arr, left, right) {
+//     console.log({ arr, left, right });
+//     if (right > left) {
+//         let middle = left + (right - left) / 2;
+//         MergeSort(arr, left, middle)
+//         MergeSort(arr, middle + 1, right)
+//         merge(arr, left, middle, right)
+//     }
+//     return arr
+// }
+// const array = [38, 27, 43, 3, 9, 82, 10];
+// console.log(MergeSort(array, array[0], array[6]))
