@@ -11,4 +11,14 @@
 // }
 // console.log(sumNumValues(333, 0))
 
-//!2
+//!2 works only if the array is sorted
+function findMinInArray(array, min) {
+    if (array[1] < min) {
+        min = array[1]
+        array.shift()
+        return (findMinInArray(array, min))
+    }
+    return min
+}
+const array = [7, 4, 3, 2, -2, -20];
+console.log(findMinInArray(array, array[0]));
