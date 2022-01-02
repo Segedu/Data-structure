@@ -1,13 +1,13 @@
 //!1
-function sumNumValues(number, total) {
-    if (number > 0) {
-        total += (number % 10);
-        let updatedNum = parseInt(number / 10);
-        return sumNumValues(updatedNum, total);
-    }
-    return total;
-}
-console.log(sumNumValues(285, 0));
+// function sumNumValues(number, total) {
+//     if (number > 0) {
+//         total += (number % 10);
+//         let updatedNum = parseInt(number / 10);
+//         return sumNumValues(updatedNum, total);
+//     }
+//     return total;
+// }
+// console.log(sumNumValues(285, 0));
 
 //!2 works only if the array is sorted
 // function findMinInArray(array, min) {
@@ -52,15 +52,15 @@ console.log(sumNumValues(285, 0));
 
 //!4
 
-// function MergeSort(arr, left, right) {
-//     console.log({ arr, left, right });
-//     if (right > left) {
-//         let middle = left + (right - left) / 2;
-//         MergeSort(arr, left, middle)
-//         MergeSort(arr, middle + 1, right)
-//         merge(arr, left, middle, right)
-//     }
-//     return arr
-// }
-// const array = [38, 27, 43, 3, 9, 82, 10];
-// console.log(MergeSort(array, array[0], array[6]))
+function MergeSort(arr, left, right) {
+    console.log({ arr, left, right });
+    if (right > left) {
+        let middle = left + ((right - left) / 2);
+        MergeSort(arr, left, middle)
+        MergeSort(arr, middle + 1, right)
+        merge(arr, left, middle, right)
+    }
+    return arr
+}
+const array = [38, 27, 43, 3, 9, 82, 90];
+console.log(MergeSort(array, array[0], array[6]))
