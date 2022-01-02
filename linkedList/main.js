@@ -58,5 +58,6 @@ console.log(list);
 
 list.pushToHead(8);
 list.pushToHead(7);
+list.pushToHead(6);
 
 console.log(list);
