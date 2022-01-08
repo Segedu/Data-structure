@@ -1,3 +1,4 @@
+
 // const n = new Node;
 // const list = new LinkedList();
 
@@ -33,6 +34,7 @@ class Node {
         this.next = null
     }
 }
+
 class LinkedList {
     constructor() {
         this.head = null
@@ -54,10 +56,12 @@ class LinkedList {
 
 let node1 = new Node(1);
 let list = new LinkedList(node1);
+
 console.log(list);
 
 list.pushToHead(8);
 list.pushToHead(7);
 list.pushToHead(6);
+list.pushToHead(5);
 
 console.log(list);
