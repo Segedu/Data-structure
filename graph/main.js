@@ -26,17 +26,15 @@ class Graph {
             this.adjacency[node2].splice(index2, 1)
         }
     }
-    // removeAdjacent(node) {
-    // }
 
-    // removeVertex(value) {
-    //     const current = this.nodes.get(value);
+    // removeVertex(node) {
+    //     const current = this.adjacency[node];
     //     if (current) {
-    //         for (const node of this.nodes.values()) {
-    //             node.removeAdjacent(current);
+    //         for (const vertex of this.adjacency[]) {
+    //             vertex.removeVertex(current);
     //         }
     //     }
-    //     return this.nodes.delete(value);
+    //     return this.adjacency.delete(node);
     // }
 }
 
@@ -46,8 +44,9 @@ graph.addVertex("a")
 graph.addVertex("b")
 graph.addVertex("c")
 
-
 graph.addEdge("a", "b")
 graph.addEdge("a", "c")
 graph.removeEdge("a", "b")
+graph.removeVertex("a")
+
 console.log(graph);
