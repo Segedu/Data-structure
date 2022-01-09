@@ -9,6 +9,7 @@
 //         this.tail = null;
 //     }
 // }
+
 // class LinkedList {
 //     constructor() {
 //         Node.head.value = "head";
